@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Open+Sans:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+:root {
+    --font: 'Montserrat', sans-serif;
+    --bodyFont: 'Open Sans', sans-serif;
+    --primary: #2b333d;
+    --secondary: #e5474b;
+    --secondaryHover: #af3539;
+    --accents: #5fcec0;
+    --lightGray: #f3f3f3;
+    --gray: #8d8d8d;
+    --white: #fff;
+    --textShadow: 3px 3px 7px var(--primary);
+    --fontSize: 16px;
+    --transition: .3s ease;
+}
+
+body {
+    font-family: var(--font);
+    font-size: var(--fontSize);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: relative;
+}
+
+.mainHeader hgroup {
+    margin-top: 200px;
+}
+
+.mainHeader hgroup h1 {
+    font-size: 3.5rem;
+    color: var(--secondary);
+    text-shadow: var(--textShadow);
+    font-weight: 800;
+}
+
+.mainHeader .navbar {
+    background-color: var(--primary);
+    border-bottom: 5px solid var(--secondary);
+}
+
+.mainHeader .navbar-brand {
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 8px;
+    font-family: 'Faster One', cursive;
+}
+
+.mainHeader .navbar-brand:hover {
+    color: var(--secondaryHover);
+    transition: var(--transition);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--secondary);
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--white) !important;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--lightGray);
+    transition: var(--transition);
+}
+
+
+/*******
+glavni
+*******/
+
+.glavni {
+    height: 40vh;
+}
+
+.glavni h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.glavni p::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 5px;
+    background: var(--accents);
+    margin: 50px auto;
+}
+
+.nasiTreneri h3 {
+    color: var(--secondary);
+    font-size: 2rem;
+}
+
+.nasiTreneri img {
+    width: 250px;
+    transition: var(--transition);
+}
+
+.nasiTreneri img:hover {
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+
+/******
+footer
+******/
+
+footer {
+    background: var(--primary);
+}
+
+footer .row i {
+    color: var(--accents);
+    font-size: 2rem;
+    padding: 0 18px 0 0;
+}
+
+footer .row i:hover {
+    color: var(--lightGray);
+}
+
+footer .row .lead {
+    color: var(--accents);
+}
+
+footer .row ul {
+    list-style: none;
+}
+
+footer .row ul a {
+    text-decoration: none;
+    color: var(--accents);
+}
+
+footer .row ul a:hover {
+    color: var(--lightGray);
+}
+
+footer .row ul li {
+    font-size: 1rem;
+    margin-left: -41px;
+}

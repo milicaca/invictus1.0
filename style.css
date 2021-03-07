@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Open+Sans:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+:root {
+    --font: 'Montserrat', sans-serif;
+    --bodyFont: 'Open Sans', sans-serif;
+    --primary: #2b333d;
+    --secondary: #e5474b;
+    --secondaryHover: #af3539;
+    --accents: #5fcec0;
+    --lightGray: #f3f3f3;
+    --gray: #8d8d8d;
+    --white: #fff;
+    --textShadow: 3px 3px 7px var(--primary);
+    --fontSize: 16px;
+    --transition: .3s ease;
+}
+
+body {
+    font-family: var(--font);
+    font-size: var(--fontSize);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.uvod h2 {
+    color: var(--secondary);
+    font-size: 2.5rem;
+    padding: 0 0 20px;
+}
+
+.uvod h2::after {
+    display: block;
+    content: '';
+    width: 16%;
+    height: 5px;
+    background: var(--accents);
+    margin-left: 0 auto;
+    margin-top: 15px;
+}
+
+
+/*********
+main header
+**********/
+
+.mainHeader {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+nav {
+    position: relative;
+}
+
+.mainHeader hgroup {
+    margin-top: 200px;
+}
+
+.mainHeader hgroup h1 {
+    font-size: 3.5rem;
+    color: var(--secondary);
+    text-shadow: var(--textShadow);
+    font-weight: 800;
+}
+
+.mainHeader .navbar {
+    background-color: var(--primary);
+    border-bottom: 5px solid var(--secondary);
+}
+
+.mainHeader .navbar-brand {
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 8px;
+    font-family: 'Faster One', cursive;
+}
+
+.mainHeader .navbar-brand:hover {
+    color: var(--secondaryHover);
+    transition: var(--transition);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--secondary);
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--white) !important;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--lightGray);
+    transition: var(--transition);
+}
+
+
+/*******
+uvod
+********/
+
+.btnFirst {
+    background: var(--accents);
+    color: var(--white);
+}
+
+.btnFirst:hover {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+
+/****
+program
+*****/
+
+.program {
+    background: var(--secondary);
+}
+
+.program i {
+    background: var(--primary);
+    color: var(--white);
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 4rem;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    margin-bottom: 20px;
+}
+
+.program a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.program a:hover {
+    transition: var(--transition);
+    color: var(--accents);
+}
+
+.program h2 {
+    font-size: 3rem;
+}
+
+.program p {
+    font-weight: 600;
+}
+
+.program h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.program i:hover {
+    font-size: 5rem;
+    width: 220px;
+    height: 220px;
+    line-height: 220px;
+    transition: var(--transition);
+}
+
+
+/**** 
+cta
+*****/
+
+.alert-success {
+    background: var(--accents);
+    border: none;
+}
+
+.btn-danger {
+    background: var(--secondary);
+}
+
+.btn-danger:hover {
+    background: var(--primary);
+    border: none;
+    transition: var(--transition);
+}
+
+.cta {
+    background-image: linear-gradient(rgba(241, 241, 241, .8), rgba(241, 241, 241, .8)), url(img/pexels-victor-freitas-841130.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--primary);
+    padding: 150px 0px;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    padding: 30px;
+}
+
+.cta h2::after {
+    display: block;
+    content: '';
+    width: 16%;
+    height: 5px;
+    background: var(--secondary);
+    margin: 0 auto;
+    margin-top: 19px;
+}
+
+.cta p {
+    font-weight: 700;
+}
+
+
+/******
+footer
+******/
+
+footer {
+    background: var(--primary);
+}
+
+footer .row i {
+    color: var(--accents);
+    font-size: 2rem;
+    padding: 0 18px 0 0;
+}
+
+footer .row i:hover {
+    color: var(--lightGray);
+}
+
+footer .row .lead {
+    color: var(--accents);
+}
+
+footer .row ul {
+    list-style: none;
+}
+
+footer .row ul a {
+    text-decoration: none;
+    color: var(--accents);
+}
+
+footer .row ul a:hover {
+    color: var(--lightGray);
+}
+
+footer .row ul li {
+    font-size: 1rem;
+    margin-left: -41px;
+}

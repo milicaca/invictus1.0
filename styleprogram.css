@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Open+Sans:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+:root {
+    --font: 'Montserrat', sans-serif;
+    --bodyFont: 'Open Sans', sans-serif;
+    --primary: #2b333d;
+    --secondary: #e5474b;
+    --secondaryHover: #af3539;
+    --accents: #5fcec0;
+    --lightGray: #f3f3f3;
+    --gray: #8d8d8d;
+    --white: #fff;
+    --textShadow: 3px 3px 7px var(--primary);
+    --fontSize: 16px;
+    --transition: .3s ease;
+}
+
+body {
+    font-family: var(--font);
+    font-size: var(--fontSize);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: relative;
+}
+
+.mainHeader hgroup {
+    margin-top: 200px;
+}
+
+.mainHeader hgroup h1 {
+    font-size: 3.5rem;
+    color: var(--secondary);
+    text-shadow: var(--textShadow);
+    font-weight: 800;
+}
+
+.mainHeader .navbar {
+    background-color: var(--primary);
+    border-bottom: 5px solid var(--secondary);
+}
+
+.mainHeader .navbar-brand {
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 8px;
+    font-family: 'Faster One', cursive;
+}
+
+.mainHeader .navbar-brand:hover {
+    color: var(--secondaryHover);
+    transition: var(--transition);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--secondary);
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--white) !important;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--lightGray);
+    transition: var(--transition);
+}
+
+
+/*******
+program
+********/
+
+.program h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.program h5 {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.program .lead::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 5px;
+    background: var(--secondary);
+    margin: 50px auto;
+}
+
+.btn {
+    background-color: var(--secondary);
+    border: none;
+}
+
+
+/***** 
+posebno
+*********/
+
+.posebno {
+    background: linear-gradient(to left, var(--accents), var(--white));
+}
+
+.posebno h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.posebno .lead:last-child:after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background: var(--primary);
+    margin: 50px auto;
+}
+
+.carousel-item {
+    height: 460px;
+}
+
+
+/******
+sportisti
+******/
+
+.sportisti {
+    background-image: linear-gradient(to left, rgba(231, 91, 91, 0.719), rgba(255, 255, 255, 1)), url(img/pexels-nappy-936094.jpg);
+}
+
+.sportisti h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.sportisti p {
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.sportisti ul {
+    font-size: 1.2rem;
+}
+
+
+/******
+rekreativci
+******/
+
+.rekreativci {
+    background-image: linear-gradient(to left, rgba(91, 231, 177, 0.5), rgba(255, 255, 255, 1)), url(img/Nenaslovljeni\ dizajn1.jpg);
+}
+
+.rekreativci h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.rekreativci p {
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.rekreativci ul {
+    font-size: 1.2rem;
+}
+
+
+/******
+oporavak
+******/
+
+.oporavak {
+    background-image: linear-gradient(to left, rgba(59, 59, 59, 0.7), rgba(255, 255, 255, 1)), url(img/oporavak.jpg);
+}
+
+.oporavak h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.oporavak p {
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.oporavak ul {
+    font-size: 1.2rem;
+}
+
+
+/*******
+kontakt
+********/
+
+.form {
+    margin: 50px auto;
+    position: relative;
+    left: 55%;
+}
+
+.kontakt h1 {
+    font-weight: 600;
+}
+
+
+/******
+footer
+******/
+
+footer {
+    background: var(--primary);
+}
+
+footer .row i {
+    color: var(--accents);
+    font-size: 2rem;
+    padding: 0 18px 0 0;
+}
+
+footer .row i:hover {
+    color: var(--lightGray);
+}
+
+footer .row .lead {
+    color: var(--accents);
+}
+
+footer .row ul {
+    list-style: none;
+}
+
+footer .row ul a {
+    text-decoration: none;
+    color: var(--accents);
+}
+
+footer .row ul a:hover {
+    color: var(--lightGray);
+}
+
+footer .row ul li {
+    font-size: 1rem;
+    margin-left: -41px;
+}
